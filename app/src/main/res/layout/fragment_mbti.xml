@@ -1,12 +1,373 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MBTI 검사 페이지입니다"
-        android:textSize="20dp"/>
+        android:orientation="vertical">
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/tv_q1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. 나는 이번 달 예산을 세우고 그 안에서 소비한다."
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_q1_yes"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="네"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_q1_no"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="아니오"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:id="@+id/tv_q2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. 여행을 가기 전에 세부 일정과 지출 계획을 세운다."
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_q2_yes"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="네"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_q2_no"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="아니오"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:id="@+id/tv_q3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. 친구와 약속할 때 즉흥적으로 결정하는 편이다."
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_q3_yes"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="네"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_q3_no"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="아니오"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:id="@+id/tv_q4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. 새로운 전자기기를 사면 바로 사용 설명서를 꼼꼼히 읽는다."
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_q4_yes"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="네"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_q4_no"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="아니오"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:id="@+id/tv_q5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. 나는 충동구매보다는 계획 구매를 더 많이 한다."
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_q5_yes"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="네"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_q5_no"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="아니오"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:id="@+id/tv_q6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. 나는 가끔 세일이라는 이유로 불필요한 물건을 산다."
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_q6_yes"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="네"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_q6_no"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="아니오"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:id="@+id/tv_q7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7. 나는 소비 후 만족감이나 후회를 자주 기록한다."
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_q7_yes"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="네"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_q7_no"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="아니오"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:id="@+id/tv_q8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8. 나는 가격보다 브랜드를 더 중요하게 생각한다."
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_q8_yes"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="네"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_q8_no"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="아니오"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:id="@+id/tv_q9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9. 나는 월별 소비 목표를 세우고 달성 여부를 확인한다."
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_q9_yes"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="네"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_q9_no"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="아니오"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:id="@+id/tv_q10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10. 나는 소비를 기록하는 앱이나 가계부를 사용해본 적이 있다."
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_q10_yes"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="네"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_q10_no"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="아니오"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:id="@+id/tv_q11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11. 나는 할인쿠폰, 적립 혜택 등을 적극적으로 활용한다."
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_q11_yes"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="네"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_q11_no"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="아니오"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:id="@+id/tv_q12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12. 카페를 고를 때 분위기·감성을 위해 더 비싼 곳을 선택할 때가 많다."
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_q12_yes"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="네"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_q12_no"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="아니오"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="다음"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_regular"
+            android:backgroundTint="@color/mainPurple_75"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp" />
+
+    </LinearLayout>
+</ScrollView>
